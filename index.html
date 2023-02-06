@@ -35,13 +35,50 @@
             </div>
             <div class="about-col-2">
                 <h1 class="sub-title">About Me</h1>
-                <p>fdsfdas fsadfsadfsdfasd fdsdaf asd sadf sad fasdfdasf sadfa sdfasdfa sdasdfsdfsadfasd
-                    fdsasdfsdfsdf sdfs fsad sdfsdfas ddsfsdfasdfasdf dfdasdfsdf sdfasdfs sadf sf asdfssdf
-                    asdfdsafdsdfsdfsdfasdfsd dsfsadf fasdsdfadfdafdssd.</p>
+                <p>fdsfdas fsadfsadfsdfasd fdsdaf asd sadf sad fasdfdasf sadfa sdfasdfa sdasdffddssss
+                fdsasdfsdfsdf sdfs fsad sdfsdfas ddsfsdfasdfasdf dfdasdfsdf sdfasdfs sadf sf asdfssdf
+                asdfdsafdsdfsdfsdfasdfsd dsfsadf fasdsdfadfdafdssd.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>            
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Current</span><br>Recruiter at AWP</li>
+                            <li><span>Current</span><br>Recruiter at AWP</li>
+                            <li><span>Current</span><br>Recruiter at AWP</li>
+                        </ul>
+                    </div>     
+                    <div class="tab-contents" id="experience"></div>
+                        <ul>
+                            <li><span>Current</span><br>Recruiter at AWP</li>
+                            <li><span>Current</span><br>Recruiter at AWP</li>
+                            <li><span>Current</span><br>Recruiter at AWP</li>
+                        </ul>
             </div>
+                    </div>
         </div>
     </div>
 </div>
+-----------services---------------
+<script>
 
+    var tablinks= document.getElementsByClassName("tab-links");
+    var tabcontents= document.getElementsByClassName("tab-contents");
+    
+    function opentab(tabname) {
+        for(tablinks of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tablink.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add(active.tab)
+    }
+
+</script>
     </body>
 </html>
